@@ -1,0 +1,397 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local A = Instance.new("Frame")
+local B = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local ScriptName = Instance.new("TextLabel")
+local Infyld = Instance.new("TextButton")
+local Cheat2 = Instance.new("TextButton")
+local Cheat3 = Instance.new("TextButton")
+local Cheat4 = Instance.new("TextButton")
+local Line1 = Instance.new("Frame")
+local Line2 = Instance.new("Frame")
+local Line3 = Instance.new("Frame")
+local Cheat2_2 = Instance.new("TextButton")
+local Cheat2_3 = Instance.new("TextButton")
+local Cheat2_4 = Instance.new("TextButton")
+local Cheat2_5 = Instance.new("TextButton")
+local Cheat1 = Instance.new("TextButton")
+local Cheat1_2 = Instance.new("TextButton")
+local EzHub = Instance.new("TextButton")
+local Opfinality = Instance.new("TextButton")
+local Cheat3_2 = Instance.new("TextButton")
+local Cheat3_3 = Instance.new("TextButton")
+local Cheat3_4 = Instance.new("TextButton")
+local Cheat3_5 = Instance.new("TextButton")
+local Cheat4_2 = Instance.new("TextButton")
+local Cheat4_3 = Instance.new("TextButton")
+local Cheat4_4 = Instance.new("TextButton")
+local Cheat4_5 = Instance.new("TextButton")
+local Creadit = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = ScreenGui
+OpenFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+OpenFrame.Position = UDim2.new(0, 0, 0.439603984, 0)
+OpenFrame.Size = UDim2.new(0, 80, 0, 29)
+
+Open.Name = "Open"
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.fromRGB(148, 0, 222)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.075000003, 0, 0.103448279, 0)
+Open.Size = UDim2.new(0, 68, 0, 22)
+Open.Font = Enum.Font.Cartoon
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Open.MouseButton1Down:connect(function()
+Main.Visible = true
+OpenFrame.Visible = false
+end)
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Main.Position = UDim2.new(0.210659891, 0, 0.166336641, 0)
+Main.Size = UDim2.new(0, 472, 0, 303)
+Main.Visible = false
+Main.Draggable = true
+
+A.Name = "A"
+A.Parent = Main
+A.BackgroundColor3 = Color3.fromRGB(133, 66, 199)
+A.Position = UDim2.new(-0.012711864, 0, 0, 0)
+A.Size = UDim2.new(0, 485, 0, 27)
+
+B.Name = "B"
+B.Parent = Main
+B.BackgroundColor3 = Color3.fromRGB(133, 66, 199)
+B.Position = UDim2.new(-0.012711864, 0, 0.910891116, 0)
+B.Size = UDim2.new(0, 485, 0, 27)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.951271176, 0, 0, 0)
+Close.Size = UDim2.new(0, 30, 0, 27)
+Close.Font = Enum.Font.Cartoon
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+OpenFrame.Visible = true
+Main.Visible = false
+end)
+
+ScriptName.Name = "Script Name"
+ScriptName.Parent = Main
+ScriptName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName.BackgroundTransparency = 1.000
+ScriptName.Position = UDim2.new(0.288135588, 0, 0, 0)
+ScriptName.Size = UDim2.new(0, 200, 0, 27)
+ScriptName.Font = Enum.Font.Cartoon
+ScriptName.Text = "Moon Script"
+ScriptName.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptName.TextScaled = true
+ScriptName.TextSize = 14.000
+ScriptName.TextWrapped = true
+
+Infyld.Name = "Inf yld"
+Infyld.Parent = Main
+Infyld.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Infyld.Position = UDim2.new(0.0338983089, 0, 0.108910888, 0)
+Infyld.Size = UDim2.new(0, 86, 0, 33)
+Infyld.Font = Enum.Font.Cartoon
+Infyld.Text = "Infinite Yield"
+Infyld.TextColor3 = Color3.fromRGB(0, 0, 0)
+Infyld.TextScaled = true
+Infyld.TextSize = 14.000
+Infyld.TextWrapped = true
+Infyld.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Cheat2.Name = "Cheat2"
+Cheat2.Parent = Main
+Cheat2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat2.Position = UDim2.new(0.288135588, 0, 0.108910888, 0)
+Cheat2.Size = UDim2.new(0, 86, 0, 33)
+Cheat2.Font = Enum.Font.Cartoon
+Cheat2.Text = "Scripts"
+Cheat2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat2.TextScaled = true
+Cheat2.TextSize = 14.000
+Cheat2.TextWrapped = true
+
+Cheat3.Name = "Cheat3"
+Cheat3.Parent = Main
+Cheat3.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat3.Position = UDim2.new(0.529661059, 0, 0.108910888, 0)
+Cheat3.Size = UDim2.new(0, 86, 0, 33)
+Cheat3.Font = Enum.Font.Cartoon
+Cheat3.Text = "Scripts"
+Cheat3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat3.TextScaled = true
+Cheat3.TextSize = 14.000
+Cheat3.TextWrapped = true
+
+Cheat4.Name = "Cheat4"
+Cheat4.Parent = Main
+Cheat4.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat4.Position = UDim2.new(0.769067764, 0, 0.108910888, 0)
+Cheat4.Size = UDim2.new(0, 86, 0, 33)
+Cheat4.Font = Enum.Font.Cartoon
+Cheat4.Text = "Scripts"
+Cheat4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat4.TextScaled = true
+Cheat4.TextSize = 14.000
+Cheat4.TextWrapped = true
+
+Line1.Name = "Line1"
+Line1.Parent = Main
+Line1.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Line1.Position = UDim2.new(0.25, 0, 0.0891089141, 0)
+Line1.Size = UDim2.new(0, 2, 0, 249)
+
+Line2.Name = "Line2"
+Line2.Parent = Main
+Line2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Line2.Position = UDim2.new(0.497881353, 0, 0.0891089141, 0)
+Line2.Size = UDim2.new(0, 2, 0, 249)
+
+Line3.Name = "Line3"
+Line3.Parent = Main
+Line3.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Line3.Position = UDim2.new(0.737288117, 0, 0.0924092457, 0)
+Line3.Size = UDim2.new(0, 2, 0, 249)
+
+Cheat2_2.Name = "Cheat2"
+Cheat2_2.Parent = Main
+Cheat2_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat2_2.Position = UDim2.new(0.288135588, 0, 0.254125416, 0)
+Cheat2_2.Size = UDim2.new(0, 86, 0, 33)
+Cheat2_2.Font = Enum.Font.Cartoon
+Cheat2_2.Text = "Scripts"
+Cheat2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat2_2.TextScaled = true
+Cheat2_2.TextSize = 14.000
+Cheat2_2.TextWrapped = true
+
+Cheat2_3.Name = "Cheat2"
+Cheat2_3.Parent = Main
+Cheat2_3.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat2_3.Position = UDim2.new(0.288135588, 0, 0.55115515, 0)
+Cheat2_3.Size = UDim2.new(0, 86, 0, 33)
+Cheat2_3.Font = Enum.Font.Cartoon
+Cheat2_3.Text = "Scripts"
+Cheat2_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat2_3.TextScaled = true
+Cheat2_3.TextSize = 14.000
+Cheat2_3.TextWrapped = true
+
+Cheat2_4.Name = "Cheat2"
+Cheat2_4.Parent = Main
+Cheat2_4.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat2_4.Position = UDim2.new(0.288135588, 0, 0.402640253, 0)
+Cheat2_4.Size = UDim2.new(0, 86, 0, 33)
+Cheat2_4.Font = Enum.Font.Cartoon
+Cheat2_4.Text = "Scripts"
+Cheat2_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat2_4.TextScaled = true
+Cheat2_4.TextSize = 14.000
+Cheat2_4.TextWrapped = true
+
+Cheat2_5.Name = "Cheat2"
+Cheat2_5.Parent = Main
+Cheat2_5.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat2_5.Position = UDim2.new(0.288135588, 0, 0.699670017, 0)
+Cheat2_5.Size = UDim2.new(0, 86, 0, 33)
+Cheat2_5.Font = Enum.Font.Cartoon
+Cheat2_5.Text = "Scripts"
+Cheat2_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat2_5.TextScaled = true
+Cheat2_5.TextSize = 14.000
+Cheat2_5.TextWrapped = true
+
+Cheat1.Name = "Cheat1"
+Cheat1.Parent = Main
+Cheat1.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat1.Position = UDim2.new(0.0338983089, 0, 0.699669957, 0)
+Cheat1.Size = UDim2.new(0, 86, 0, 33)
+Cheat1.Font = Enum.Font.Cartoon
+Cheat1.Text = "Scripts"
+Cheat1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat1.TextScaled = true
+Cheat1.TextSize = 14.000
+Cheat1.TextWrapped = true
+
+Cheat1_2.Name = "Cheat1"
+Cheat1_2.Parent = Main
+Cheat1_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat1_2.Position = UDim2.new(0.0338983089, 0, 0.55115509, 0)
+Cheat1_2.Size = UDim2.new(0, 86, 0, 33)
+Cheat1_2.Font = Enum.Font.Cartoon
+Cheat1_2.Text = "Scripts"
+Cheat1_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat1_2.TextScaled = true
+Cheat1_2.TextSize = 14.000
+Cheat1_2.TextWrapped = true
+
+EzHub.Name = "Ez Hub"
+EzHub.Parent = Main
+EzHub.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+EzHub.Position = UDim2.new(0.0338983089, 0, 0.402640253, 0)
+EzHub.Size = UDim2.new(0, 86, 0, 33)
+EzHub.Font = Enum.Font.Cartoon
+EzHub.Text = "Ez Hub"
+EzHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+EzHub.TextScaled = true
+EzHub.TextSize = 14.000
+EzHub.TextWrapped = true
+EzHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+Opfinality.Name = "Opfinality"
+Opfinality.Parent = Main
+Opfinality.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Opfinality.Position = UDim2.new(0.0338983089, 0, 0.254125416, 0)
+Opfinality.Size = UDim2.new(0, 86, 0, 33)
+Opfinality.Font = Enum.Font.Cartoon
+Opfinality.Text = "OP Finality"
+Opfinality.TextColor3 = Color3.fromRGB(0, 0, 0)
+Opfinality.TextScaled = true
+Opfinality.TextSize = 14.000
+Opfinality.TextWrapped = true
+Opfinality.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxscript123/Op/main/OPFinality",true))();
+end)
+
+Cheat3_2.Name = "Cheat3"
+Cheat3_2.Parent = Main
+Cheat3_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat3_2.Position = UDim2.new(0.529661059, 0, 0.699669957, 0)
+Cheat3_2.Size = UDim2.new(0, 86, 0, 33)
+Cheat3_2.Font = Enum.Font.Cartoon
+Cheat3_2.Text = "Scripts"
+Cheat3_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat3_2.TextScaled = true
+Cheat3_2.TextSize = 14.000
+Cheat3_2.TextWrapped = true
+
+Cheat3_3.Name = "Cheat3"
+Cheat3_3.Parent = Main
+Cheat3_3.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat3_3.Position = UDim2.new(0.529661059, 0, 0.537953794, 0)
+Cheat3_3.Size = UDim2.new(0, 86, 0, 33)
+Cheat3_3.Font = Enum.Font.Cartoon
+Cheat3_3.Text = "Scripts"
+Cheat3_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat3_3.TextScaled = true
+Cheat3_3.TextSize = 14.000
+Cheat3_3.TextWrapped = true
+
+Cheat3_4.Name = "Cheat3"
+Cheat3_4.Parent = Main
+Cheat3_4.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat3_4.Position = UDim2.new(0.529661059, 0, 0.402640253, 0)
+Cheat3_4.Size = UDim2.new(0, 86, 0, 33)
+Cheat3_4.Font = Enum.Font.Cartoon
+Cheat3_4.Text = "Scripts"
+Cheat3_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat3_4.TextScaled = true
+Cheat3_4.TextSize = 14.000
+Cheat3_4.TextWrapped = true
+
+Cheat3_5.Name = "Cheat3"
+Cheat3_5.Parent = Main
+Cheat3_5.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat3_5.Position = UDim2.new(0.529661059, 0, 0.254125416, 0)
+Cheat3_5.Size = UDim2.new(0, 86, 0, 33)
+Cheat3_5.Font = Enum.Font.Cartoon
+Cheat3_5.Text = "Scripts"
+Cheat3_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat3_5.TextScaled = true
+Cheat3_5.TextSize = 14.000
+Cheat3_5.TextWrapped = true
+
+Cheat4_2.Name = "Cheat4"
+Cheat4_2.Parent = Main
+Cheat4_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat4_2.Position = UDim2.new(0.769067764, 0, 0.699669957, 0)
+Cheat4_2.Size = UDim2.new(0, 86, 0, 33)
+Cheat4_2.Font = Enum.Font.Cartoon
+Cheat4_2.Text = "Scripts"
+Cheat4_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat4_2.TextScaled = true
+Cheat4_2.TextSize = 14.000
+Cheat4_2.TextWrapped = true
+
+Cheat4_3.Name = "Cheat4"
+Cheat4_3.Parent = Main
+Cheat4_3.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat4_3.Position = UDim2.new(0.769067764, 0, 0.55115509, 0)
+Cheat4_3.Size = UDim2.new(0, 86, 0, 33)
+Cheat4_3.Font = Enum.Font.Cartoon
+Cheat4_3.Text = "Scripts"
+Cheat4_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat4_3.TextScaled = true
+Cheat4_3.TextSize = 14.000
+Cheat4_3.TextWrapped = true
+
+Cheat4_4.Name = "Cheat4"
+Cheat4_4.Parent = Main
+Cheat4_4.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat4_4.Position = UDim2.new(0.769067764, 0, 0.402640253, 0)
+Cheat4_4.Size = UDim2.new(0, 86, 0, 33)
+Cheat4_4.Font = Enum.Font.Cartoon
+Cheat4_4.Text = "Scripts"
+Cheat4_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat4_4.TextScaled = true
+Cheat4_4.TextSize = 14.000
+Cheat4_4.TextWrapped = true
+
+Cheat4_5.Name = "Cheat4"
+Cheat4_5.Parent = Main
+Cheat4_5.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cheat4_5.Position = UDim2.new(0.769067764, 0, 0.254125416, 0)
+Cheat4_5.Size = UDim2.new(0, 86, 0, 33)
+Cheat4_5.Font = Enum.Font.Cartoon
+Cheat4_5.Text = "Scripts"
+Cheat4_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat4_5.TextScaled = true
+Cheat4_5.TextSize = 14.000
+Cheat4_5.TextWrapped = true
+
+Creadit.Name = "Creadit"
+Creadit.Parent = Main
+Creadit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creadit.BackgroundTransparency = 1.000
+Creadit.Position = UDim2.new(0.288135588, 0, 0.914191425, 0)
+Creadit.Size = UDim2.new(0, 200, 0, 26)
+Creadit.Font = Enum.Font.Cartoon
+Creadit.Text = "Creadit: TwNXgP#5591"
+Creadit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Creadit.TextScaled = true
+Creadit.TextSize = 14.000
+Creadit.TextWrapped = true
+
+--Made By TwNXgP#5591
